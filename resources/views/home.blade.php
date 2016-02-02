@@ -28,7 +28,7 @@
 
                 <div class="form-data">
                     <label for="pothole" class="control-label">Street Address</label>
-                    <input type="text" name="address" id="street-address" class="form-control">
+                    <input type="text" name="address" id="street-address" class="form-control" placeholder="Street Name, District">
 
                     <label for="pothole" class="control-label">Location</label>
                     <select class="form-control">
@@ -39,7 +39,7 @@
                     </select>
 
                     <label for="pothole" class="control-label">Hole Size</label>
-                    <select class="form-control">
+                    <select class="form-control" name="size">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -53,7 +53,7 @@
                     </select>
 
                     <label for="pothole" class="control-label">Email</label>
-                    <input type="email" name="email" id="submit-email" class="form-control">
+                    <input type="email" name="email" id="submit-email" class="form-control" placeholder="{{ 'john@example.com' }}">
 
                 </div>
             </div>
