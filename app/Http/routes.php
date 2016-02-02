@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 /*
 |--------------------------------------------------------------------------
@@ -27,5 +24,29 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+
+    /*
+     * Show HomePage & Add Pothole Form
+     * */
+
+    Route::get('/', function () {
+        return view('home');
+    });
+
+
+    /*
+     * Register an Account
+     */
+
+
+
+    /*
+     * Login an Account
+     */
+
+    Route::get('/login', function(){
+       return view('login');
+    });
+
+
 });

@@ -1,0 +1,21 @@
+a{
+    text-decoration: none !important;
+}
+
+nav{
+    /*outline: solid 1px rgba(0,0,0,.1);*/
+    filter: drop-shadow()
+}
+.navbar h3{
+    padding: 0;
+    margin: 0;
+}
+
+.glyphicon{
+    padding-right:5px;
+}
+
+.login-icon{
+    padding: 15px 15px;
+    float: right;
+}
