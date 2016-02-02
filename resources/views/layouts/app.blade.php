@@ -6,7 +6,7 @@
 </head>
 
 <body>
-
+    @yield('background')
     <div class="container">
         @include('partials.navigation')
         @yield('content')

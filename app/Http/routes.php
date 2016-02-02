@@ -33,6 +33,10 @@ Route::group(['middleware' => ['web']], function () {
         return view('home');
     });
 
+    Route::post('/', function(){
+
+    });
+
 
     /*
      * Register an Account
