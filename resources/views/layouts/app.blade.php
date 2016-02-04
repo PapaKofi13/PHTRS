@@ -6,10 +6,13 @@
 </head>
 
 <body>
+
     @yield('background')
-    <div class="container">
+    <div id="container">
         @include('partials.navigation')
-        @yield('content')
+        <div class="content">
+            @yield('content')
+        </div>
     </div>
 
     @include('partials.footer')

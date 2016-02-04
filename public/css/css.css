@@ -1,3 +1,12 @@
+html, body, #container{
+    height: 95%;
+}
+
+body > #container {
+    height: auto;
+    min-height: 100%;
+}
+
 a{
     text-decoration: none !important;
 }
@@ -24,6 +33,7 @@ nav {
 .background{
     overflow: hidden;
     position:fixed;
+    top: 0;
     /*opacity: 0.7;*/
     z-index: -1;
 }
@@ -60,10 +70,11 @@ nav {
 }
 
 body{
-    background-color: #000 !important;
+    background-color: #fff !important;
 }
  .content{
      margin-top: 100px;
+     padding-bottom: 5em;
  }
 .head{
     margin: 0 auto;
@@ -77,13 +88,27 @@ body{
 .pothole-form{
     /*height: 500px;*/
     padding: 0 25px 100px 25px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto;
     border-radius: 5px;
 }
 
 .pothole-form h3{
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 .form-data{
     padding: 0 10px;
+}
+
+#footer p{
+    font-weight: 200;
+    padding-top: 5px;
+}
+
+#footer{
+    background-color: white;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 5em;
+    margin-top: -5em;
 }

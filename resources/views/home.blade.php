@@ -9,16 +9,16 @@
 @section('content')
     <div class="content">
     <div class="head">
-        <h1 class="text-center">Found a Bump in the Road? Submit a Report!</h1>
+        <h1 class="text-center">Found a Bump on the Road? Submit a Report!</h1>
         <br>
-        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <br><br>
     </div>
 
 
-    <div class="pothole-form" style="background: #fff url({{ URL::asset('images/city-buildings.svg') }}) no-repeat bottom; ">
+    <div class="pothole-form" style="background: #fff url('{{ URL::asset('images/city-buildings.svg') }}') no-repeat bottom; ">
 
-        <form action="{{ url('/') }}" method="post" class="form-horizontal">
+        <form action="{{ url('potholes') }}" method="post" class="form-horizontal">
             {!! csrf_field() !!}
 
             <!-- Pothole Form -->
@@ -28,11 +28,11 @@
 
                 <div class="form-data">
                     <label for="pothole" class="control-label">Street Address</label>
-                    <input type="text" name="address" id="street-address" class="form-control" placeholder="Street Name, District">
+                    <input type="text" name="street" id="street-address" class="form-control" placeholder="Street Name, District">
 
                     <label for="pothole" class="control-label">Location</label>
-                    <select class="form-control">
-                        <option>Curb</option>
+                    <select class="form-control" name="location">
+                        <option>Vehicle Lane</option>
                         <option>Sidewalk</option>
                         <option>Bike Lane</option>
                         <option>Curb</option>
@@ -53,7 +53,7 @@
                     </select>
 
                     <label for="pothole" class="control-label">Email</label>
-                    <input type="email" name="email" id="submit-email" class="form-control" placeholder="{{ 'john@example.com' }}">
+                    <input type="email" name="user_email" id="submit-email" class="form-control" placeholder="{{ 'john@example.com' }}">
 
                 </div>
             </div>
